@@ -177,30 +177,7 @@ nav a:hover{
 	animation-duration: .5s;
 }
 
-@media only screen and (orientation: portrait){
-	.navheading{
-		width:60%;
-		display: flex;
-		flex-shrink: inherit;
-		flex-direction:	column;
-		flex-wrap: wrap;
-	} 
-	.navheading a{
-		width: 40%;
-	}
-    .about-contentsection {
-        display: block;
-    }
-    .header-img img{
-        size: 50%;
-    }
-    body {
-        display: block;
-    }
 
-
-
-}
 
 
 button{
@@ -254,4 +231,66 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (orientation: portrait){
+	.navheading{
+		width:60%;
+		display: flex;
+		flex-shrink: inherit;
+		flex-direction:	column;
+		flex-wrap: wrap;
+    }
+     
+	.navheading a{
+		width: 40%;
+    }
+    
+    .aboutsection{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      align-content: center;
+    
+    }
+
+    .about-contentsection {
+        display: inline-block;
+        width: 60%;
+    }
+
+    .header-img img{
+        display: inline-block;
+        width:70%;
+        height:30%;
+    }
+    footer{
+        display: flex;
+        width: 65%;
+    }
+
+    .middle-content .bottom-content{
+        width: 60%;
+        box-sizing: border-box;
+
+    }
+
+    .closingsection{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+    }
+    .top-content{
+        display:block;
+        width: 80%;
+    }
+
+    .middle-content{
+        display:block;
+        width: 80%;
+    }
+
+    .bottom-content{
+        display:inline-block;
+    }
 }
