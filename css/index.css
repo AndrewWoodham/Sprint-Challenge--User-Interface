@@ -158,6 +158,51 @@ p {
     margin-top: 2%;
 }
 
+@keyframes hover{
+	from{font-size: 100%}
+	to{font-size: 150%}
+	from{color: slategray}
+	to{color: rgb(5, 172, 223);}
+}
+@keyframes buttonhover{
+	from{font-size: 90%}
+	to{font-size: 120%}
+	from{color: slategray}
+	to{color: rgb(5, 172, 223);}
+}
+nav a:hover{
+	font-size: 150%;
+	color: rgb(5, 172, 223);
+	animation: hover;
+	animation-duration: .5s;
+}
+
+@media only screen and (orientation: portrait){
+	.navheading{
+		width:60%;
+		display: flex;
+		flex-shrink: inherit;
+		flex-direction:	column;
+		flex-wrap: wrap;
+	} 
+	.navheading a{
+		width: 40%;
+	}
+    .about-contentsection {
+        display: block;
+    }
+    .header-img img{
+        size: 50%;
+    }
+    body {
+        display: block;
+    }
+
+
+
+}
+
+
 button{
     border-radius: 15%;
     border: solid black 1.5px;
@@ -166,6 +211,12 @@ button{
     font-size: 100%;
     display: block;
     margin: 4% 0% 4% 0%;
+}
+button:hover{
+    color: rgb(5, 172, 223);
+    font-size: 120%;
+    animation: buttonhover;
+    animation-duration: .5s;
 }
 
 .closingsection{
