@@ -66,6 +66,23 @@ p {
     line-height: 1.4;
 }
 
+.navheading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2% 15% 2% 15%;
+}
+.navheading a{
+    text-decoration: none;
+    color: black;
+    margin-top: 2.5%;
+}
+.header-img{
+   text-align: center;
+   margin-bottom: 2%;
+}
+
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -90,6 +107,7 @@ p {
     border-bottom: 1px dashed black;
 }
 
+
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
@@ -104,13 +122,24 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.box:nth-of-type(1) {background: teal}
+.box:nth-of-type(2) {background: gold}
+.box:nth-of-type(3) {background: cadetblue}
+.box:nth-of-type(4) {background: coral}
+.box:nth-of-type(5) {background: crimson}
+.box:nth-of-type(6) {background: forestgreen}
+.box:nth-of-type(7) {background: darkorchid}
+.box:nth-of-type(8) {background: hotpink}
+.box:nth-of-type(9) {background: indigo}
+.box:nth-of-type(10) {background: dodgerblue}
+
 
 .bottom-content {
     display: flex;
