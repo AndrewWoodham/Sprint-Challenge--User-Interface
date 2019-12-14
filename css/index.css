@@ -140,6 +140,29 @@ p {
 .box:nth-of-type(9) {background: indigo}
 .box:nth-of-type(10) {background: dodgerblue}
 
+.about-contentsection{
+    border-top: 1px black dashed;
+    margin-top: 2%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-contentsection section{
+    border-bottom: 1px black dashed;
+    width: 40%;
+    margin-bottom: 3%;
+}
+
+button{
+    border-radius: 15%;
+    border: solid black 1.5px;
+    background: white;
+    padding: 2% 5% 2% 5%;
+    font-size: 100%;
+    display: block;
+    margin: 3% 0% 3% 0%;
+}
 
 .bottom-content {
     display: flex;
