@@ -143,15 +143,19 @@ p {
 .about-contentsection{
     border-top: 1px black dashed;
     margin-top: 2%;
-    padding: 2%;
+    padding: 3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .about-contentsection section{
     border-bottom: 1px black dashed;
-    width: 40%;
+    width: 45%;
     margin-bottom: 3%;
+}
+
+.about-contentsection h2{
+    margin-top: 2%;
 }
 
 button{
@@ -161,7 +165,11 @@ button{
     padding: 2% 5% 2% 5%;
     font-size: 100%;
     display: block;
-    margin: 3% 0% 3% 0%;
+    margin: 4% 0% 4% 0%;
+}
+
+.closingsection{
+    margin-bottom: 3%;
 }
 
 .bottom-content {
