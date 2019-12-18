@@ -66,6 +66,23 @@ p {
     line-height: 1.4;
 }
 
+.navheading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2% 15% 2% 15%;
+}
+.navheading a{
+    text-decoration: none;
+    color: black;
+    margin-top: 2.5%;
+}
+.header-img{
+   text-align: center;
+   margin-bottom: 2%;
+}
+
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -90,6 +107,7 @@ p {
     border-bottom: 1px dashed black;
 }
 
+
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
@@ -104,12 +122,82 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box:nth-of-type(1) {background: teal}
+.box:nth-of-type(2) {background: gold}
+.box:nth-of-type(3) {background: cadetblue}
+.box:nth-of-type(4) {background: coral}
+.box:nth-of-type(5) {background: crimson}
+.box:nth-of-type(6) {background: forestgreen}
+.box:nth-of-type(7) {background: darkorchid}
+.box:nth-of-type(8) {background: hotpink}
+.box:nth-of-type(9) {background: indigo}
+.box:nth-of-type(10) {background: dodgerblue}
+
+.about-contentsection{
+    border-top: 1px black dashed;
+    margin-top: 2%;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-contentsection section{
+    border-bottom: 1px black dashed;
+    width: 45%;
+    margin-bottom: 3%;
+}
+
+.about-contentsection h2{
+    margin-top: 2%;
+}
+
+@keyframes hover{
+	from{font-size: 100%}
+	to{font-size: 150%}
+	from{color: slategray}
+	to{color: rgb(5, 172, 223);}
+}
+@keyframes buttonhover{
+	from{font-size: 90%}
+	to{font-size: 120%}
+	from{color: slategray}
+	to{color: rgb(5, 172, 223);}
+}
+nav a:hover{
+	font-size: 150%;
+	color: rgb(5, 172, 223);
+	animation: hover;
+	animation-duration: .5s;
+}
+
+
+
+
+button{
+    border-radius: 15%;
+    border: solid black 1.5px;
+    background: white;
+    padding: 2% 5% 2% 5%;
+    font-size: 100%;
+    display: block;
+    margin: 4% 0% 4% 0%;
+}
+button:hover{
+    color: rgb(5, 172, 223);
+    font-size: 120%;
+    animation: buttonhover;
+    animation-duration: .5s;
+}
+
+.closingsection{
+    margin-bottom: 3%;
 }
 
 .bottom-content {
@@ -143,4 +231,66 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (orientation: portrait){
+	.navheading{
+		width:60%;
+		display: flex;
+		flex-shrink: inherit;
+		flex-direction:	column;
+		flex-wrap: wrap;
+    }
+     
+	.navheading a{
+		width: 40%;
+    }
+    
+    .aboutsection{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      align-content: center;
+    
+    }
+
+    .about-contentsection {
+        display: inline-block;
+        width: 60%;
+    }
+
+    .header-img img{
+        display: inline-block;
+        width:70%;
+        height:30%;
+    }
+    footer{
+        display: flex;
+        width: 65%;
+    }
+
+    .middle-content .bottom-content{
+        width: 60%;
+        box-sizing: border-box;
+
+    }
+
+    .closingsection{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+    }
+    .top-content{
+        display:block;
+        width: 80%;
+    }
+
+    .middle-content{
+        display:block;
+        width: 80%;
+    }
+
+    .bottom-content{
+        display:inline-block;
+    }
 }
